@@ -4,6 +4,9 @@
 
 const number = +8801609729909;
 function validNumber(number){
+    if(!typeof number == 'number'){
+        return 'Pleace Enter A Valid Number'
+    }
     const allOperator = ['19','18','17','15','16','13'];
     const numberStr = number.toString()
     const bangladeshCode = numberStr.slice(0,2)
@@ -13,7 +16,7 @@ function validNumber(number){
             let result = 'Invalid Operaotr'
             for(let operatorNumber of allOperator){
                 if(onlyNumber.startsWith(operatorNumber)){
-                    result = 'It\s A Valid Bnagladeshi Number';
+                    result = 'It\'s A Valid Bnagladeshi Number';
                 }
             }
             return result;
