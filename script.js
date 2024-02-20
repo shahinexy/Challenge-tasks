@@ -17,7 +17,7 @@ btn.addEventListener('click', function () {
         if (numberStr.length === 13 || numberStr.length == 10) {
             if (numberStr.length === 13) {
                 if (numberStr.startsWith('880')) {
-                    let check = 'Invalid Operaotr'
+                    let check = 'Invalid Operaotor'
                     for (let operatorNumber of allOperator) {
                         if (onlyNumber.startsWith(operatorNumber)) {
                             check = 'It\'s A Valid Bnagladeshi Number';
@@ -27,9 +27,8 @@ btn.addEventListener('click', function () {
                         }
                     }
                     result.innerText = check;
-                    if (check == 'Invalid Operaotr') {
+                    if (check == 'Invalid Operaotor') {
                         result.style.color = 'red'
-                        console.log('green');
                     }
                 }
                 else {
@@ -39,18 +38,18 @@ btn.addEventListener('click', function () {
                 }
             }
             else {
-                let check = 'Invalid Operaotr';
+                let check = 'Invalid Operaotor';
                 for (let operatorNumber of allOperator) {
                     if (numberStr.startsWith(operatorNumber)) {
                         check = 'It\'s A Valid Bnagladeshi Number'
+                        result.style.color = 'green'
+                        input.value = '';
                     }
                 }
                 result.innerText = check;
-                if (check == 'Invalid Operaotr') {
+                if (check == 'Invalid Operaotor') {
                     result.style.color = 'red'
                 }
-                result.style.color = 'green'
-                input.value = '';
             }
 
         }

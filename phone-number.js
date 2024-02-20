@@ -15,7 +15,7 @@ function validNumber(number){
     if(numberStr.length === 13 || numberStr.length == 10){
         if(numberStr.length === 13){
             if(numberStr.startsWith('880')){
-                let result = 'Invalid Operaotr'
+                let result = 'Invalid Operaotor'
                 for(let operatorNumber of allOperator){
                     if(onlyNumber.startsWith(operatorNumber)){
                         result = 'It\'s A Valid Bnagladeshi Number';
@@ -28,7 +28,7 @@ function validNumber(number){
             }
         }
         else{
-            let result = 'Invalid Operaotr'
+            let result = 'Invalid Operaotor'
             for(let operatorNumber of allOperator){
                 if(numberStr.startsWith(operatorNumber)){
                     result = 'It\'s A Valid Bnagladeshi Number';
