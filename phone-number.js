@@ -10,7 +10,6 @@ function validNumber(number){
     }
     const allOperator = ['19','18','17','15','16','13'];
     const numberStr = number.toString()
-    const bangladeshCode = numberStr.slice(0,2)
     const onlyNumber = numberStr.slice(3);
 
     if(numberStr.length === 13 || numberStr.length == 10){
